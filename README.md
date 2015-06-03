@@ -48,10 +48,10 @@ Notes:
 	}
 
 * Setup Serial Port for MIDI:
-	# Free serial port from Serial console:
+	- Free serial port from Serial console:
 	Modify '/boot/cmdline.txt' - remove sections containing 'ttyAMA0'.
 	Modify '/etc/inittab' - comment out line 'T0:23:respawn:/sbin/getty -L ttyAMA0 115200 vt100'
-	# Hack!!! Modify UART clock to support MIDI 31500 Baud rate (3MHz x 31250 / 38400) Using UART standard Baud Rate of 38400 bps.
+	- Hack!!! Modify UART clock to support MIDI 31500 Baud rate (3MHz x 31250 / 38400) Using UART standard Baud Rate of 38400 bps.
   - Add to '/boot/config.txt'
 	  init_uart_clock=2441406 
 	  init_uart_baud=38400
